@@ -5,9 +5,13 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
+//var index = require('./routes/index');
 var users = require('./routes/users');
 var loggin = require('./routes/loggin');
+
+var index = require('./routes/index');
+var users = require('./routes/users');
+var catalog = require('./routes/catalog');  //Import routes for "catalog" area of site
 
 var app = express();
 
@@ -26,12 +30,34 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/loggin', loggin);
+
+app.get('/users/:userId/books/:bookId', function (req, res) {
+  // Access userId via: req.params.userId
+  // Access bookId via: req.params.bookId
+  res.send(req.params);
+})
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
+
+//Import the mongoose module
+var mongoose = require('mongoose');
+
+//Set up default mongoose connection
+var mongoDB = 'mongodb://bnb_admin:123456m@ds147534.mlab.com:47534/bnb';
+mongoose.connect(mongoDB, {
+  useMongoClient: true
+});
+
+//Get the default connection
+var db = mongoose.connection;
+
+//Bind connection to error event (to get notification of connection errors)
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
 
 // error handler
 app.use(function(err, req, res, next) {
