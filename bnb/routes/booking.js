@@ -4,17 +4,19 @@ var crypthelper = require("../helpers/cryptHelper")
 
 /* GET users listing. */
 router.post('/', function (req, res, next) {
-  if(!!req.body.name){
-    var user = req.body.name
+  if(!!req.body.script){
+      switch (req.body.script) {
+          case "get_book":
+              
+              break;
+      
+          default:
+              break;
+      }
+
   }else{
-    res.status(402);
+      res.status(404)
   }
-  if(!!req.body.password){
-    var password = req.body.password
-  }else{
-    res.status(402)
-  }
- loggin(user,password,res)
 });
 
 function loggin(user, password,res) {
