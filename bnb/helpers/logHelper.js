@@ -4,5 +4,4 @@ function logInfo(text) {
     console.log(text.bgWhite.black);
 }
 
-
 exports.colors = colors;
