@@ -1,6 +1,7 @@
 {
     "locations": [
         {
+            "description":{
             "Type": "appartement",
             "Mcarre": 26,
             "Adresse": "12, rue de la Pomme",
@@ -13,6 +14,8 @@
                 "douche",
                 "toilettes"
             ]
+        },
+        "booking":[{"date_deb":"12/03/2017","date_fin":"15/03/2017","user":"username"}]
         },
         {
             "Type": "maison",

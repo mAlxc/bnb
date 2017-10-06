@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var crypthelper = require("../helpers/cryptHelper")
-
+var tests = require('../public/json/test.json')
 /* GET users listing. */
 router.post('/', function (req, res, next) {
   if(!!req.body.script){
@@ -24,7 +24,8 @@ router.post('/', function (req, res, next) {
 
 
 function get_booking(req,res){
-
+    console.log(tests.locations)
+    res.send(tests.locations)
 }
 
 function set_booking(req,res){
