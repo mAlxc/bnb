@@ -39,17 +39,6 @@ function loggin(data, res) {
   }
   //encryptage du mot de passe
   password = crypthelper.encrypted(data.password);
-  for (element in tests.users) {
-    if (tests.users[element].name === data.name) {
-      if (tests.users[element].password === password) {
-        res.send("Succefull auth");
-        return null;
-      } else {
-        res.send("Wrong user/password");
-        return null;
-      }
-    }
-  }
   res.send("Wrong user/password");
 }
 

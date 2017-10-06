@@ -2,13 +2,13 @@
     "locations": [
         {
             "description":{
-            "Type": "appartement",
-            "Mcarre": 26,
-            "Adresse": "12, rue de la Pomme",
-            "Ville": "Paris",
-            "Pays": "France",
-            "Owner": 1,
-            "Divers": [
+            "type": "appartement",
+            "espace": 26,
+            "adresse": "12, rue de la pomme",
+            "ville": "paris",
+            "pays": "France",
+            "owner": 1,
+            "divers": [
                 "cuisine",
                 "terrasse",
                 "douche",
@@ -18,13 +18,13 @@
         "booking":[{"date_deb":"12/03/2017","date_fin":"15/03/2017","user":"username"}]
         },
         {
-            "Type": "maison",
-            "Mcarre": 120,
-            "Adresse": "60, rue du chemin",
-            "Ville": "Nantes",
-            "Pays": "France",
-            "Owner": 2,
-            "Divers": [
+            "type": "maison",
+            "espace": 120,
+            "adresse": "60, rue du chemin",
+            "ville": "Nantes",
+            "pays": "France",
+            "owner": 2,
+            "divers": [
                 "cuisine",
                 "douche",
                 "toilettes",
@@ -32,25 +32,25 @@
             ]
         },
         {
-            "Type": "chambre",
-            "Mcarre": 10,
-            "Adresse": "5th avenue",
-            "Ville": "New York City",
-            "Pays": "Etats Unis",
-            "Owner": 3,
-            "Divers": [
+            "type": "chambre",
+            "espace": 10,
+            "adresse": "5th avenue",
+            "ville": "New York City",
+            "pays": "Etats Unis",
+            "owner": 3,
+            "divers": [
                 "cuisine",
                 "douche"
             ]
         },
         {
-            "Type": "maison",
-            "Mcarre": 200,
-            "Adresse": "20th w Shannon st",
-            "Ville": "Phoenix",
-            "Pays": "Etats Unis",
-            "Owner": 4,
-            "Divers": [
+            "type": "maison",
+            "espace": 200,
+            "adresse": "20th w Shannon st",
+            "ville": "phoenix",
+            "pays": "Etats Unis",
+            "owner": 4,
+            "divers": [
                 "cuisine",
                 "douche",
                 "baignoire",
@@ -60,26 +60,26 @@
             ]
         },
         {
-            "Type": "appartement",
-            "Mcarre": 80,
-            "Adresse": "6, rue du Cheuvreil",
-            "Ville": "Montréal",
-            "Pays": "Canada",
-            "Owner": 5,
-            "Divers": [
+            "type": "appartement",
+            "espace": 80,
+            "adresse": "6, rue du Cheuvreil",
+            "ville": "Montréal",
+            "pays": "Canada",
+            "owner": 5,
+            "divers": [
                 "cuisine",
                 "douche",
                 "toilettes"
             ]
         },
         {
-            "Type": "maison",
-            "Mcarre": 70,
-            "Adresse": "4th e Wesmister st",
-            "Ville": "Berkeley",
-            "Pays": "Etats Unis",
-            "Owner": 6,
-            "Divers": [
+            "type": "maison",
+            "espace": 70,
+            "adresse": "4th e Wesmister st",
+            "ville": "Berkeley",
+            "pays": "Etats Unis",
+            "owner": 6,
+            "divers": [
                 "cuisine",
                 "douche",
                 "toilettes",
@@ -87,24 +87,24 @@
             ]
         },
         {
-            "Type": "chambre",
-            "Mcarre": 7,
-            "Adresse": "5th Baker st",
-            "Ville": "Londres",
-            "Pays": "Angleterre",
-            "Owner": 7,
-            "Divers": [
+            "type": "chambre",
+            "espace": 7,
+            "adresse": "5th Baker st",
+            "ville": "Londres",
+            "pays": "angleterre",
+            "owner": 7,
+            "divers": [
                 "cuisine"
             ]
         },
         {
-            "Type": "maison",
-            "Mcarre": 250,
-            "Adresse": "15 calle del pollo loco",
-            "Ville": "Barcelone",
-            "Pays": "Espagne",
-            "Owner": 8,
-            "Divers": [
+            "type": "maison",
+            "espace": 250,
+            "adresse": "15 calle del pollo loco",
+            "ville": "Barcelone",
+            "pays": "Espagne",
+            "owner": 8,
+            "divers": [
                 "cuisine",
                 "douche",
                 "baignoire",
@@ -115,24 +115,24 @@
             ]
         },
         {
-            "Type": "chambre",
-            "Mcarre": 10,
-            "Adresse": "10 calle del Sol",
-            "Ville": "Madrid",
-            "Pays": "Espagne",
-            "Owner": 9,
-            "Divers": [
+            "type": "chambre",
+            "espace": 10,
+            "adresse": "10 calle del Sol",
+            "ville": "Madrid",
+            "pays": "Espagne",
+            "owner": 9,
+            "divers": [
                 "douche"
             ]
         },
         {
-            "Type": "maison",
-            "Mcarre": 112,
-            "Adresse": "22, rue de la bière",
-            "Ville": "Bruges",
-            "Pays": "Belgique",
-            "Owner": 10,
-            "Divers": [
+            "type": "maison",
+            "espace": 112,
+            "adresse": "22, rue de la bière",
+            "ville": "Bruges",
+            "pays": "Belgique",
+            "owner": 10,
+            "divers": [
                 "cuisine",
                 "baignoire",
                 "toilettes",
@@ -140,26 +140,26 @@
             ]
         },
         {
-            "Type": "appartement",
-            "Mcarre": 26,
-            "Adresse": "7th avenue",
-            "Ville": "New York City",
-            "Pays": "Etats Unis",
-            "Owner": 11,
-            "Divers": [
+            "type": "appartement",
+            "espace": 26,
+            "adresse": "7th avenue",
+            "ville": "New York City",
+            "pays": "Etats Unis",
+            "owner": 11,
+            "divers": [
                 "cuisine",
                 "douche",
                 "toilettes"
             ]
         },
         {
-            "Type": "péniche",
-            "Mcarre": 90,
-            "Adresse": "13, Newveditch st",
-            "Ville": "Amsterdam",
-            "Pays": "Pays-Bas",
-            "Owner": 12,
-            "Divers": [
+            "type": "péniche",
+            "espace": 90,
+            "adresse": "13, Newveditch st",
+            "ville": "amsterdam",
+            "pays": "pays-Bas",
+            "owner": 12,
+            "divers": [
                 "cuisine",
                 "douche",
                 "toilettes",
@@ -167,25 +167,25 @@
             ]
         },
         {
-            "Type": "chambre",
-            "Mcarre": 10,
-            "Adresse": "51 calle grande",
-            "Ville": "Lisbonne",
-            "Pays": "Portugal",
-            "Owner": 13,
-            "Divers": [
+            "type": "chambre",
+            "espace": 10,
+            "adresse": "51 calle grande",
+            "ville": "Lisbonne",
+            "pays": "portugal",
+            "owner": 13,
+            "divers": [
                 "cuisine",
                 "douche"
             ]
         },
         {
-            "Type": "maison",
-            "Mcarre": 110,
-            "Adresse": "23th avenue",
-            "Ville": "Los Angeles",
-            "Pays": "Etats Unis",
-            "Owner": 14,
-            "Divers": [
+            "type": "maison",
+            "espace": 110,
+            "adresse": "23th avenue",
+            "ville": "Los angeles",
+            "pays": "Etats Unis",
+            "owner": 14,
+            "divers": [
                 "cuisine",
                 "douche",
                 "baignoire",
@@ -195,26 +195,26 @@
             ]
         },
         {
-            "Type": "appartement",
-            "Mcarre": 70,
-            "Adresse": "6, rue du Chêne",
-            "Ville": "Montréal",
-            "Pays": "Canada",
-            "Owner": 15,
-            "Divers": [
+            "type": "appartement",
+            "espace": 70,
+            "adresse": "6, rue du Chêne",
+            "ville": "Montréal",
+            "pays": "Canada",
+            "owner": 15,
+            "divers": [
                 "cuisine",
                 "baignoire",
                 "toilettes"
             ]
         },
         {
-            "Type": "maison",
-            "Mcarre": 90,
-            "Adresse": "41th e Badley st",
-            "Ville": "Sedona",
-            "Pays": "Etats Unis",
-            "Owner": 16,
-            "Divers": [
+            "type": "maison",
+            "espace": 90,
+            "adresse": "41th e Badley st",
+            "ville": "Sedona",
+            "pays": "Etats Unis",
+            "owner": 16,
+            "divers": [
                 "cuisine",
                 "douche",
                 "toilettes",
@@ -223,24 +223,24 @@
             ]
         },
         {
-            "Type": "chambre",
-            "Mcarre": 12,
-            "Adresse": "5, rue Kersentic",
-            "Ville": "Brest",
-            "Pays": "France",
-            "Owner": 17,
-            "Divers": [
+            "type": "chambre",
+            "espace": 12,
+            "adresse": "5, rue Kersentic",
+            "ville": "Brest",
+            "pays": "France",
+            "owner": 17,
+            "divers": [
                 "douche"
             ]
         },
         {
-            "Type": "maison",
-            "Mcarre": 250,
-            "Adresse": "15, rue de la piste",
-            "Ville": "Morgins",
-            "Pays": "Suisse",
-            "Owner": 18,
-            "Divers": [
+            "type": "maison",
+            "espace": 250,
+            "adresse": "15, rue de la piste",
+            "ville": "Morgins",
+            "pays": "Suisse",
+            "owner": 18,
+            "divers": [
                 "cuisine",
                 "douche",
                 "baignoire",
@@ -250,24 +250,24 @@
             ]
         },
         {
-            "Type": "chambre",
-            "Mcarre": 10,
-            "Adresse": "10, rue de l'heure",
-            "Ville": "Genève",
-            "Pays": "Suisse",
-            "Owner": 19,
-            "Divers": [
+            "type": "chambre",
+            "espace": 10,
+            "adresse": "10, rue de l'heure",
+            "ville": "Genève",
+            "pays": "Suisse",
+            "owner": 19,
+            "divers": [
                 "terrasse"
             ]
         },
         {
-            "Type": "maison",
-            "Mcarre": 115,
-            "Adresse": "22 ma que st",
-            "Ville": "Naples",
-            "Pays": "Italie",
-            "Owner": 20,
-            "Divers": [
+            "type": "maison",
+            "espace": 115,
+            "adresse": "22 ma que st",
+            "ville": "Naples",
+            "pays": "Italie",
+            "owner": 20,
+            "divers": [
                 "cuisine",
                 "baignoire",
                 "toilettes",
