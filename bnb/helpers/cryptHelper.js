@@ -21,3 +21,6 @@ function uncrypted(crypted) {
     dec += decipher.final('utf8');// fin
     return dec;
 }
+
+exports.encrypted = encrypted;
+exports.uncrypted = uncrypted;
