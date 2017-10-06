@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var crypthelper = require("../helpers/cryptHelper")
 var tests = require('../public/json/test.json')
+var mongoHelper = require("../helpers/mongoHelper")
 /* GET users listing. */
 router.post('/', function (req, res, next) {
     if (!!req.body.script) {
@@ -26,6 +27,8 @@ router.post('/', function (req, res, next) {
 
 
 function get_booking(req, res) {
+    var toto = mongoHelper.getCollection("locations");
+    console.log(toto)
     res.send(tests.locations)
 }
 

@@ -44,21 +44,6 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-//Import the mongoose module
-var mongoose = require('mongoose');
-
-//Set up default mongoose connection
-var mongoDB = 'mongodb://bnb_admin:123456m@ds147534.mlab.com:47534/bnb';
-mongoose.connect(mongoDB, {
-  useMongoClient: true
-});
-
-//Get the default connection
-var db = mongoose.connection;
-
-//Bind connection to error event (to get notification of connection errors)
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-
 
 // error handler
 app.use(function(err, req, res, next) {

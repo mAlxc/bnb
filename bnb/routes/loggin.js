@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var crypthelper = require("../helpers/cryptHelper")
 var tests = require("../public/json/users.json")
+var mongoHelper = require("../helpers/mongoHelper")
 
 /* GET users listing. */
 router.post('/', function (req, res, next) {
@@ -9,6 +10,9 @@ router.post('/', function (req, res, next) {
     switch (req.body.script) {
       case "login":
         loggin(req.body.data, res)
+        break;
+      case "signin":
+        insertIn(req.body.data, res)
         break;
 
       default:
@@ -21,8 +25,28 @@ router.post('/', function (req, res, next) {
 
 });
 
-function loggin(data, res) {
+function insertIn(data, res) {
+  if (!!data.name) {
+    var user = data.name
+  } else {
+    res.status(404);
+    res.end();
+    return
+  }
+  if (!!data.password) {
+    var password = data.password
+  } else {
+    res.status(404)
+    res.end();
+    return
+  }
+  //encryptage du mot de passe
+  data.password = crypthelper.encrypted(data.password);
+  mongoHelper.insertIn("users", data)
+}
 
+
+function loggin(data, res) {
   if (!!data.name) {
     var user = data.name
   } else {
@@ -39,6 +63,18 @@ function loggin(data, res) {
   }
   //encryptage du mot de passe
   password = crypthelper.encrypted(data.password);
+  var users = mongoHelper.getCollection("users");
+  for (element in users) {
+    if (tests.users[element].name === data.name) {
+      if (tests.users[element].password === password) {
+        res.send("Succefull auth");
+        return null;
+      } else {
+        res.send("Wrong user/password");
+        return null;
+      }
+    }
+  }
   res.send("Wrong user/password");
 }
 
