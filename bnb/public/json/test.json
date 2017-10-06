@@ -1,0 +1,275 @@
+{
+    "locations": [
+        {
+            "Type": "appartement",
+            "Mcarre": 26,
+            "Adresse": "12, rue de la Pomme",
+            "Ville": "Paris",
+            "Pays": "France",
+            "Owner": 1,
+            "Divers": [
+                "cuisine",
+                "terrasse",
+                "douche",
+                "toilettes"
+            ]
+        },
+        {
+            "Type": "maison",
+            "Mcarre": 120,
+            "Adresse": "60, rue du chemin",
+            "Ville": "Nantes",
+            "Pays": "France",
+            "Owner": 2,
+            "Divers": [
+                "cuisine",
+                "douche",
+                "toilettes",
+                "jardin"
+            ]
+        },
+        {
+            "Type": "chambre",
+            "Mcarre": 10,
+            "Adresse": "5th avenue",
+            "Ville": "New York City",
+            "Pays": "Etats Unis",
+            "Owner": 3,
+            "Divers": [
+                "cuisine",
+                "douche"
+            ]
+        },
+        {
+            "Type": "maison",
+            "Mcarre": 200,
+            "Adresse": "20th w Shannon st",
+            "Ville": "Phoenix",
+            "Pays": "Etats Unis",
+            "Owner": 4,
+            "Divers": [
+                "cuisine",
+                "douche",
+                "baignoire",
+                "toilettes",
+                "jardin",
+                "piscine"
+            ]
+        },
+        {
+            "Type": "appartement",
+            "Mcarre": 80,
+            "Adresse": "6, rue du Cheuvreil",
+            "Ville": "Montréal",
+            "Pays": "Canada",
+            "Owner": 5,
+            "Divers": [
+                "cuisine",
+                "douche",
+                "toilettes"
+            ]
+        },
+        {
+            "Type": "maison",
+            "Mcarre": 70,
+            "Adresse": "4th e Wesmister st",
+            "Ville": "Berkeley",
+            "Pays": "Etats Unis",
+            "Owner": 6,
+            "Divers": [
+                "cuisine",
+                "douche",
+                "toilettes",
+                "baignoire"
+            ]
+        },
+        {
+            "Type": "chambre",
+            "Mcarre": 7,
+            "Adresse": "5th Baker st",
+            "Ville": "Londres",
+            "Pays": "Angleterre",
+            "Owner": 7,
+            "Divers": [
+                "cuisine"
+            ]
+        },
+        {
+            "Type": "maison",
+            "Mcarre": 250,
+            "Adresse": "15 calle del pollo loco",
+            "Ville": "Barcelone",
+            "Pays": "Espagne",
+            "Owner": 8,
+            "Divers": [
+                "cuisine",
+                "douche",
+                "baignoire",
+                "toilettes",
+                "jardin",
+                "piscine",
+                "terrasse"
+            ]
+        },
+        {
+            "Type": "chambre",
+            "Mcarre": 10,
+            "Adresse": "10 calle del Sol",
+            "Ville": "Madrid",
+            "Pays": "Espagne",
+            "Owner": 9,
+            "Divers": [
+                "douche"
+            ]
+        },
+        {
+            "Type": "maison",
+            "Mcarre": 112,
+            "Adresse": "22, rue de la bière",
+            "Ville": "Bruges",
+            "Pays": "Belgique",
+            "Owner": 10,
+            "Divers": [
+                "cuisine",
+                "baignoire",
+                "toilettes",
+                "terrasse"
+            ]
+        },
+        {
+            "Type": "appartement",
+            "Mcarre": 26,
+            "Adresse": "7th avenue",
+            "Ville": "New York City",
+            "Pays": "Etats Unis",
+            "Owner": 11,
+            "Divers": [
+                "cuisine",
+                "douche",
+                "toilettes"
+            ]
+        },
+        {
+            "Type": "péniche",
+            "Mcarre": 90,
+            "Adresse": "13, Newveditch st",
+            "Ville": "Amsterdam",
+            "Pays": "Pays-Bas",
+            "Owner": 12,
+            "Divers": [
+                "cuisine",
+                "douche",
+                "toilettes",
+                "terrasse"
+            ]
+        },
+        {
+            "Type": "chambre",
+            "Mcarre": 10,
+            "Adresse": "51 calle grande",
+            "Ville": "Lisbonne",
+            "Pays": "Portugal",
+            "Owner": 13,
+            "Divers": [
+                "cuisine",
+                "douche"
+            ]
+        },
+        {
+            "Type": "maison",
+            "Mcarre": 110,
+            "Adresse": "23th avenue",
+            "Ville": "Los Angeles",
+            "Pays": "Etats Unis",
+            "Owner": 14,
+            "Divers": [
+                "cuisine",
+                "douche",
+                "baignoire",
+                "toilettes",
+                "jardin",
+                "piscine"
+            ]
+        },
+        {
+            "Type": "appartement",
+            "Mcarre": 70,
+            "Adresse": "6, rue du Chêne",
+            "Ville": "Montréal",
+            "Pays": "Canada",
+            "Owner": 15,
+            "Divers": [
+                "cuisine",
+                "baignoire",
+                "toilettes"
+            ]
+        },
+        {
+            "Type": "maison",
+            "Mcarre": 90,
+            "Adresse": "41th e Badley st",
+            "Ville": "Sedona",
+            "Pays": "Etats Unis",
+            "Owner": 16,
+            "Divers": [
+                "cuisine",
+                "douche",
+                "toilettes",
+                "baignoire",
+                "piscine"
+            ]
+        },
+        {
+            "Type": "chambre",
+            "Mcarre": 12,
+            "Adresse": "5, rue Kersentic",
+            "Ville": "Brest",
+            "Pays": "France",
+            "Owner": 17,
+            "Divers": [
+                "douche"
+            ]
+        },
+        {
+            "Type": "maison",
+            "Mcarre": 250,
+            "Adresse": "15, rue de la piste",
+            "Ville": "Morgins",
+            "Pays": "Suisse",
+            "Owner": 18,
+            "Divers": [
+                "cuisine",
+                "douche",
+                "baignoire",
+                "toilettes",
+                "jardin",
+                "terrasse"
+            ]
+        },
+        {
+            "Type": "chambre",
+            "Mcarre": 10,
+            "Adresse": "10, rue de l'heure",
+            "Ville": "Genève",
+            "Pays": "Suisse",
+            "Owner": 19,
+            "Divers": [
+                "terrasse"
+            ]
+        },
+        {
+            "Type": "maison",
+            "Mcarre": 115,
+            "Adresse": "22 ma que st",
+            "Ville": "Naples",
+            "Pays": "Italie",
+            "Owner": 20,
+            "Divers": [
+                "cuisine",
+                "baignoire",
+                "toilettes",
+                "terrasse"
+            ]
+        }
+    ]
+}
