@@ -1,13 +1,16 @@
 var express = require('express');
 var router = express.Router();
 var crypthelper = require("../helpers/cryptHelper")
-
+var tests = require('../public/json/test.json')
 /* GET users listing. */
 router.post('/', function (req, res, next) {
   if(!!req.body.script){
       switch (req.body.script) {
-          case "get_book":
-              
+          case "get_booking":
+              get_booking(req,res);
+              break;
+          case "set_booking":
+              set_booking(req,res);
               break;
       
           default:
@@ -19,12 +22,14 @@ router.post('/', function (req, res, next) {
   }
 });
 
-function loggin(user, password,res) {
-  
-  //encryptage du mot de passe
-  password = crypthelper.encrypted(password);
-  
-  res.send([user,password])
+
+function get_booking(req,res){
+    console.log(tests.locations)
+    res.send(tests.locations)
+}
+
+function set_booking(req,res){
+
 }
 
 
