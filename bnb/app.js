@@ -15,7 +15,6 @@ var booking = require('./routes/booking');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var catalog = require('./routes/catalog');  //Import routes for "catalog" area of site
 
 var app = express();
 
