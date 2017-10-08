@@ -42,7 +42,7 @@ function insertIn(data, res) {
   }
   //encryptage du mot de passe
   data.password = crypthelper.encrypted(data.password);
-  mongoHelper.insertIn("users", data)
+  mongoHelper.insertIn("users", data,res)
 }
 
 

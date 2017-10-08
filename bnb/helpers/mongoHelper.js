@@ -16,42 +16,36 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 }*/
 var MongoClient = require("mongodb").MongoClient;
-var database = null
 var url = 'mongodb://bnb_admin:123456m@ds147534.mlab.com:47534/bnb'
 
-function getCollection(collectionname) {
+function initMongo() {
   MongoClient.connect(url, function (error, db) {
     if (error) {
       console.log(error)
     } else {
       //db.getCollection(collectionname);
-      console.log("Connecté à la base de données 'tutoriel'");
-      var collection = db.collection(collectionname)
-      console.log(collection)
+      console.log("Connecté à la base de données",db.databaseName);
+      app.db = db;
     }
 
   });
-
 }
 
-function insertIn(collectionname, data) {
-  MongoClient.connect(url, function (error, db) {
-    if (error) {
-      console.log(error)
-    } else {
-      //db.getCollection(collectionname);
-      console.log("Connecté à la base de données 'tutoriel'");
-      var collection = db.collection(collectionname)
-      collection.insert(data, null, function (error, results) {
-        if (error) throw error;
 
-        console.log("Le document a bien été inséré");
-      });
-    }
-
-  });
-
+function insertIn(collectionname, data,res) {
+  if (app.db) {
+    collection = app.db.collection(collectionname)
+    collection.insert(data, null, function (error, results) {
+      if (error) throw error;
+      console.log("Le document a bien été inséré");
+      res.status(200)
+      res.end()
+    });
+  }else{
+    res.status(500)
+    res.end()
+  }
 }
 
-exports.getCollection = getCollection;
+exports.initMongo = initMongo;
 exports.insertIn = insertIn;
