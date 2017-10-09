@@ -4,14 +4,16 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+
 require("./helpers/mongoHelper").initMongo();
 
-global.app = {}
+global.appVars = {}
 
 //var index = require('./routes/index');
 var users = require('./routes/users');
 var loggin = require('./routes/loggin');
 var booking = require('./routes/booking');
+var locations = require('./routes/locations');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -33,6 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/loggin', loggin);
+app.use('/locations', locations);
 
 app.get('/users/:userId/books/:bookId', function (req, res) {
   // Access userId via: req.params.userId

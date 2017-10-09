@@ -3,80 +3,36 @@ var router = express.Router();
 var crypthelper = require("../helpers/cryptHelper")
 var tests = require("../public/json/users.json")
 var mongoHelper = require("../helpers/mongoHelper")
+var loginhelper = require("../helpers/loginHelper")
 
-/* GET users listing. */
+
 router.post('/', function (req, res, next) {
   if (!!req.body.script) {
     switch (req.body.script) {
       case "login":
-        loggin(req.body.data, res)
+        loginhelper.login(req.body.data, res)
         break;
       case "signin":
+        loginhelper.newuser(req.body.data, res)
+        break;
+      case "getAll":
         insertIn(req.body.data, res)
         break;
-
       default:
+      res.send({
+        error: {
+            err_code: 400,
+            err_msg: "No script found",
+            err_data : req.body
+        }
+    })
         break;
     }
   } else {
     res.status(402)
     res.end()
   }
-
 });
-
-function insertIn(data, res) {
-  if (!!data.name) {
-    var user = data.name
-  } else {
-    res.status(404);
-    res.end();
-    return
-  }
-  if (!!data.password) {
-    var password = data.password
-  } else {
-    res.status(404)
-    res.end();
-    return
-  }
-  //encryptage du mot de passe
-  data.password = crypthelper.encrypted(data.password);
-  mongoHelper.insertIn("users", data,res)
-}
-
-
-function loggin(data, res) {
-  if (!!data.name) {
-    var user = data.name
-  } else {
-    res.status(404);
-    res.end();
-    return
-  }
-  if (!!data.password) {
-    var password = data.password
-  } else {
-    res.status(404)
-    res.end();
-    return
-  }
-  //encryptage du mot de passe
-  password = crypthelper.encrypted(data.password);
-  var users = mongoHelper.getCollection("users");
-  for (element in users) {
-    if (tests.users[element].name === data.name) {
-      if (tests.users[element].password === password) {
-        res.send("Succefull auth");
-        return null;
-      } else {
-        res.send("Wrong user/password");
-        return null;
-      }
-    }
-  }
-  res.send("Wrong user/password");
-}
 
 
 module.exports = router;
